@@ -1,5 +1,5 @@
 <package format="2">
-  <name>cv_bridge</name>
+  <name>cv_bridge_orbslam3</name>
   <version>3.2.1</version>
   <description>
     This contains CvBridge, which converts between ROS2
