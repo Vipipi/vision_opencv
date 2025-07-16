@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
-project(cv_bridge)
+project(cv_bridge_orbslam3)
 
 find_package(ament_cmake_ros REQUIRED)
 
@@ -55,7 +55,7 @@ endif()
 
 if(NOT ANDROID)
   ament_python_install_package(${PROJECT_NAME}
-    PACKAGE_DIR python/${PROJECT_NAME}
+    PACKAGE_DIR python/cv_bridge_orbslam3
   )
 endif()
 
@@ -79,7 +79,7 @@ ament_export_dependencies(
 ament_export_targets(export_${PROJECT_NAME})
 
 # install the include folder
-install(DIRECTORY include/ DESTINATION include/${PROJECT_NAME})
+install(DIRECTORY include/cv_bridge_orbslam3 DESTINATION include/cv_bridge_orbslam3)
 
 install(TARGETS ${PROJECT_NAME}
         RUNTIME DESTINATION bin
